@@ -313,16 +313,41 @@ if (temdeg === temdeg2) {
   console.log(55);
 }
 
-//18//
-const string = "69";
-console.log(number(String(69).split("").reverse().join("")));
-
-//19//
-const seven = 21;
-if (seven > 0) {
-  console.log("эерэг");
-} else {
-  console.log("сөрөг");
-}
+// //19//
+// const seven = 21;
+// if (seven > 0) {
+//   console.log("эерэг");
+// } else {
+//   console.log("сөрөг");
+// }
 
 //20//
+
+//21//
+let weekNumber = 5;
+let weekName;
+ 
+if (weekNumber == 1) {
+  weekName = 'Davaa';
+} else if (weekNumber == 2) {
+  weekName = 'Mygmar';
+} else if (weekNumber == 3) {
+  weekName = 'lhagva';
+} else if (weekNumber == 4) {
+  weekName = 'Pvrev';
+} else if (weekNumber == 5) {
+  weekName = 'Baasan';
+} else if (weekNumber == 6) {
+  weekName = 'Bymba';
+} else if (weekNumber == 7) {
+  weekName = 'Nym';
+} else {
+  weekName = 'Buruu too';
+} 
+console.log(weekName);
+
+//22//
+const username = "amgaa"
+const aron = username === "amgaa" ? "amgaaaasd" : "asdasd";
+
+console.log(aron);

@@ -338,19 +338,31 @@
 //   }
 //   console.log(stars);
 // }
-let a = 10;
-let aa = 0;
-let aaa = 0;
-for (let i = 1; i <= a; i++) {
-  console.log(i);
 
-  if (i % 2 === 0) {
-    aa += i;
-  } else {
-    aaa += i;
-  }
-}
+// let a = 10;
+// let aa = 0;
+// let aaa = 0;
+// for (let i = 1; i <= a; i++) {
+//   console.log(i);
 
-console.log("tegsh tooniii niilber:" + aa);
-console.log("sondgoi toonii niilber:" + aaa);
-console.log("tegsh sondgoi niilber:" + (aa + aaa));
+//   if (i % 2 === 0) {
+//     aa += i;
+//   } else {
+//     aaa += i;
+//   }
+// }
+
+// console.log("tegsh tooniii niilber:" + aa);
+// console.log("sondgoi toonii niilber:" + aaa);
+// console.log("tegsh sondgoi niilber:" + (aa + aaa));
+
+//11.3//
+
+//1. Тооны цифрийн нийлбэрийг олох. (let n = 1234)//
+// const az = "1234";
+// let azz = azz[0] + azz[1] + azz[2] + azz[3];
+
+//2.Тоог урвуулан бичих (let num = 12345 -> 54321)//
+// const easy = "12345";
+// let easy1 = easy[4] + easy[3] + easy[2] + easy[1] + easy[0];
+// console.log(easy1);

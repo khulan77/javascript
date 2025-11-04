@@ -121,32 +121,142 @@
 //4.Үгийн эгшиг тоолох (let word = "mongolia”,  let vowels = "aeiou") includes ашиглах, prompt ашиглах//
 
 //5.Нууц үг шалгах (3 оролдлого) (let password = "your name“, let attempt; let tries = 0; const maxTries = 3;) prompt ашиглах//
-const pass = "your name";
-let attempt;
-let tries = 0;
-const maxTries = 3;
+// const pass = "your name";
+// let attempt;
+// let tries = 0;
+// const maxTries = 3;
 
-while (tries < maxTries) {
-  attempt = prompt("Нууц үгээ оруулна уу:");
+// do {
+//   attempt = prompt(`Please Password (${tries + 1}/${maxTries})`);
 
-  if (attempt === null) {
-    alert("Оролдлого цуцлагдлаа!");
+//   if (!attempt) {
+//     alert("NO password");
+//     break;
+//   }
+
+//   tries++;
+
+//   if (attempt === password) {
+//     alert("Good");
+//     success = true;
+//     break;
+//   } else {
+//     if (tries == 1) {
+//       alert("mun");
+//     } else if (tries == 2) {
+//       alert("bish");
+//     } else if (tries == 3) {
+//       alert("zza");
+//     }
+//   }
+// } while (tries < maxTries);
+
+// if (!success && maxTries <= tries) {
+//   alert("sa");
+// }
+
+//Array-bodlogo1//
+
+// 1.["🥩", "🌾", "🥔", "🥕", "🥬"] array iin length iig ol.//
+
+let nogoo = ["🥩", "🌾", "🥔", "🥕", "🥬"];
+console.log(nogoo);
+
+// 2.10 urttai number array uusge.//
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers);
+
+// 3.5 urttai string array uusge.//
+let freit = ["apple", "mango", "orange", "pineapple", "banana"];
+console.log(freit);
+
+// 4.Массивын эхний ба сүүлийн элементийг харуул. [1,2,3,4,5,6,7]//
+let array = [1, 2, 3, 4, 5, 6, 7];
+console.log(array[0], array[array.length - 1]);
+
+// 5.Тодорхой элемент массив дотор байгаа эсэхийг шалга. (string array, ['ford', "toyota", "mercedes", " chevrolet ", "tesla", "byd"])//
+let stringArray = ["ford", "toyota", "mercedes", "chevrolet ", "tesla", "byd"];
+let text = "byd";
+
+for (let i = 0; i < stringArray.length; i++) {
+  if (stringArray[i] === text) {
+    console.log("YES", text);
     break;
+  } else {
+    console.log("NO");
   }
-
-  //   if (attempt === password) {
-  //     alert("Нууц үг зөв байна! Тавтай морил");
-  //     break;
-  //   } else {
-  //     tries++;
-  //     if (tries < maxTries) {
-  //       alert(
-  //         `Буруу нууц үг! Та дахин оролдоно уу. (${
-  //           maxTries - tries
-  //         } боломж үлдлээ)`
-  //       );
-  //     } else {
-  //       alert("Та 3 удаа буруу орууллаа. Хандалт хаагдлаа");
-  //     }
-  //   }
 }
+
+// 6.Массив дахь хамгийн их тоог ол. (number array , [1,2,3,4,5,6,7])//
+let numbers1 = [1, 2, 3, 4, 5, 6, 7];
+let max = numbers1[0];
+for (let i = 1; i < numbers1.length; i++) {
+  if (numbers1[i] > max) {
+    max = numbers1[i];
+  }
+}
+console.log(max);
+
+// 7.Массив дахь хамгийн бага тоог ол. (number array, [1,2,3,4,5,6,7])//
+let numbers2 = [1, 2, 3, 4, 5, 6, 7];
+let min = numbers2[0];
+for (let i = 1; i > numbers2.leigth; i++) {
+  if (numbers2[i] < min) {
+    min = numbers2[i];
+  }
+}
+console.log(min);
+
+// 8.Зөвхөн тэгш тоонуудыг шүүн гарга. (number array, [1,2,3,4,5,6,7])//
+
+let numbers3 = [1, 2, 3, 4, 5, 6, 7];
+const even = [];
+let j = 0;
+
+for (let i = 0; i < numbers3.length; i++) {
+  if (numbers3[i] % 2 === 0) {
+    even[j] = numbers3[i];
+    j++;
+  }
+}
+
+console.log(even);
+
+// 9.Тодорхой тоо массив дотор хэдэн удаа орсныг тоол. (number array, [ 2,3 , 1,6,7,10,11,2] , 2 )//
+
+let numbers4 = [2, 3, 1, 6, 7, 10, 11, 2];
+let target = 2;
+let count = 0;
+for (let i = 1; i > numbers4.length; i++) {
+  if (numbers4[i] === target) {
+    count++;
+  }
+}
+console.log(target);
+
+// 10.Бүх тоонуудыг 2 дахин үржүүлсэн шинэ массив үүсгэ. (number array, [1,2,3,4,5,6,7])//
+let numbers6 = [1, 2, 3, 4, 5, 6, 7];
+
+for (let i = 1; i < numbers6.length; i++) {
+  let sun2 = numbers6[i] * 2;
+  console.log(sun2);
+}
+
+//11.Бүх үгсийг том үсгээр (uppercase) болго. ([a, b, c, d, e ,f])//
+let words = ["a", "b", "c", "d", "e", "f"];
+let upperWords = [];
+
+for (let i = 0; i < words.length; i++) {
+  upperWords.push(words[i].toUpperCase());
+}
+console.log(upperWords);
+
+//12.Бүх үгсийг жижиг үсгээр (lowercase) болго. ([A,B,C,D,E,T,Y,I,O,F])//
+let words2 = ["A", "B", "C", "D", "E", "F"];
+let lowerWords = [];
+
+for (let i = 0; i < words2.length; i++) {
+  lowerWords.push(words2[i].toLowerCase());
+}
+console.log(lowerWords);

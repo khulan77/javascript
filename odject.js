@@ -257,6 +257,7 @@
 // for (let i = 0; i < employees.length; i++) {
 //   if (employees[i].active === true) {
 //     niilber += employees[i].salary;
+
 //     dundaj++;
 //   }
 // }
@@ -624,26 +625,93 @@
 // }
 
 //27.Борлуулалтын орлого хамгийн бага бүтээгдэхүүнээс эхлэн массив үүсгэ.products = [{title: "Уут", price: 500, sold: 10, discount: 0.1}, {title: "Сав", price: 800, sold: 5, discount: 0.2}]//
+// const products1 = [
+//   { title: "Уут", price: 500, sold: 10, discount: 0.1 },
+//   { title: "Сав", price: 800, sold: 5, discount: 0.2 },
+// ];
+
+// let niilber = 0;
+
+// for (let i = 0; i < products1.length; i++) {
+//   let son =
+//     products1[i].price * products1[i].sold * (1 - products1[i].discount);
+//     if(son < )
+// }
+
 //28.Pages / rating харьцаа хамгийн бага номыг ол.books = [{title: "Монгол түүх", pages: 120, rating: 4.5}, {title: "Газар зүй", pages: 150, rating: 4.8}]//
+
+// const books = [
+//   { title: "Монгол түүх", pages: 120, rating: 4.5 },
+//   { title: "Газар зүй", pages: 150, rating: 4.8 },
+// ];
+
+// let minBooks = books[0];
+// let minBook = minBooks.pages / minBooks.rating;
+
+// for (let i = 0; i < books.length; i++) {
+//   let total = books[i].pages / books[i].rating;
+//   if (total > minBook) {
+//     minBook = total;
+//     minBooks = books[i];
+//   }
+// }
+// console.log(minBooks.title);
+
 //29.Хамгийн бага оноотой subject бүхий оюутны нэрийг ол.students = [{name: "Бат", math: 70, english: 80, science: 90}, {name: "Сара", math: 60, english: 85, science: 95}, {name: "Наран", math: 100, english: 90, science: 80}//
 
-const students = [
-  { name: "Бат", math: 70, english: 80, science: 90 },
-  { name: "Сара", math: 60, english: 85, science: 95 },
-  { name: "Наран", math: 100, english: 90, science: 80 },
-];
+// const students = [
+//   { name: "Бат", math: 70, english: 80, science: 90 },
+//   { name: "Сара", math: 60, english: 85, science: 95 },
+//   { name: "Наран", math: 100, english: 90, science: 80 },
+// ];
 
-let minTotal = students[0].math + students[0].english + students[0].science;
-let minStudent = [students[0].name];
+// let minTotal = students[0].math + students[0].english + students[0].science;
+// let minStudent = [students[0].name];
 
-for (let i = 1; i < students.length; i++) {
-  let total = students[i].math + students[i].english + students[i].science;
-  if (total < minTotal) {
-    minTotal = total;
-    minStudent = students[i].name;
-  } else if (total === minTotal) {
-    minStudent.push(students[i].name);
-  }
-}
+// for (let i = 1; i < students.length; i++) {
+//   let total = students[i].math + students[i].english + students[i].science;
+//   if (total < minTotal) {
+//     minTotal = total;
+//     minStudent = students[i].name;
+//   } else if (total === minTotal) {
+//     minStudent.push(students[i].name);
+//   }
+// }
 
-console.log(minStudent);
+// console.log(minStudent);
+
+//bodlogo2//
+
+//Объект ашиглан үндсэн үйлдлүүд (Basic Object Manipulation)//
+
+//1.Сурагчийг төлөөлөх объект үүсгэж дараах шинж чанаруудыг өгөх: name, age, grade, subject. Объектыг console дээр хэвлэнэ үү.
+//2.Үүсгэсэн объект дээр email шинж чанарыг нэмнэ үү.
+//3.Сурагчийн нас 18-с доош бол "not allowed" гэж console дээр хэвлэнэ үү.//
+
+// let suragch = {
+//   name: "tegshe",
+//   ago: 13,
+//   grade: 10,
+//   subject: "math",
+//   email: "tegshe77@gmail.com",
+// };
+
+// if (suragch.ago > 18) {
+//   console.log("not allowed");
+// } else {
+//   console.log("allowed");
+// }
+
+// console.log(suragch);
+
+//Объект дээр давталт ба нөхцөл (Loops & Conditions with Objects)//
+
+//1.Давталт ашиглан объектын зөвхөн key-г хэвлэнэ үү.//
+
+// let skin = {
+//   name: "khulan",
+//   ago: 18,
+//   grade: 10,
+//   subject: "english",
+//   email: "khulan174@gmail.com"
+// }

@@ -366,3 +366,111 @@
 // const easy = "12345";
 // let easy1 = easy[4] + easy[3] + easy[2] + easy[1] + easy[0];
 // console.log(easy1);
+
+///Dawhar dawtalt//
+
+//1.Массив дахь бүх тоонуудыг хоёр хоёроор нь үржүүлж, шинэ массивт хадгал. Жишээ нь: [2,3,4] → [6,8,12]//
+
+// const number = [2, 3, 4];
+// let number2 = [];
+
+// for (let i = 0; i < number.length; i++) {
+//   for (let j = i + 1; j < number.length; j++) {
+//     number2.push(number[i] * number[j]);
+//   }
+// }
+// console.log(number2);
+
+//2.Массив дахь давтагдсан тоонуудыг олж, тус бүрийн хэдэн удаа гарч ирсэн болохыг тооц. Жишээ: [1,2,2,3,3,3,4] → {2:2, 3:3}
+
+// const number = [1, 2, 2, 3, 3, 3];
+// let number2 = {};
+
+// for (let i = 0; i < number.length; i++) {
+//   let count = 0;
+
+//   for (j = 0; j < number.length; j++) {
+//     if (number[i] === number[j]) {
+//       count++;
+//     }
+//   }
+
+//   if (count > 1) {
+//     number2[number[i]] = count;
+//   }
+// }
+
+// console.log(number2);
+
+//3.Хоёр массивын дунд адилхан элементүүдийг ол. Жишээ: [1,2,3,4] ба [3,4,5,6] → [3,4]/
+
+// const number = [1, 2, 3, 4];
+// const number2 = [3, 4, 5, 6];
+
+// let num = [];
+
+// for (let i = 0; i < number.length; i++) {
+//   for (let j = 0; j < number2.length; j++) {
+//     if (number[i] === number2[j] && !num.includes(number2[j])) {
+//       num.push(number[i]);
+//     }
+//   }
+// }
+// console.log(num);
+
+//4.Өгөгдсөн тооноос хамаарч од(*)-оор гурвалжин хэвлэ. 4//
+
+// const value = 4;
+
+// for (let i = 0; i < value; i++) {
+//   let star = "";
+
+//   for (let j = 0; j <= i; j++) {
+//     star += " *";
+//   }
+//   console.log(star);
+// }
+
+//5.Хоёр үг нь ижил үсгийн бүрдэлтэй (анаграмм) эсэхийг шалга. Жишээ: "listen" ба "silent" → true//
+
+// const anagramm = "listen";
+// const anagramm1 = "silent";
+// let isAnagramm = false;
+
+// if (anagramm.length !== anagramm1.length) {
+//   isAnagramm = false;
+// } else {
+//   for (let i = 0; i < anagramm.length; i++) {
+//     for (let j = 0; j < anagramm1.length; j++) {
+//       if (anagramm[i] === anagramm1[j]) {
+//         isAnagramm = true;
+//         break;
+//       }
+//     }
+//     if (!isAnagramm) {
+//       break;
+//     }
+//   }
+// }
+
+// console.log(isAnagramm);
+
+//6.Массив доторх хоёр элементийн нийлбэр нь өгөгдсөн target тоотой тэнцүү хосуудыг ол.//
+
+//7.Mассивыг өсөхөөр эрэмбэл Жишээ: [5,2,8,1] → [1,2,5,8]//
+
+// const numbers = [5, 2, 8, 1];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   for (let j = i + 1; j < numbers.length; j++) {
+//     if (numbers[i] > numbers[j]) {
+//       let numbers2 = numbers[i];
+//       numbers[i] = numbers[j];
+//       numbers[j] = numbers2;
+//     }
+//   }
+// }
+
+// console.log(numbers);
+
+//8.Массив дахь хоёр тооны ялгавар k-тай тэнцүү хосуудыг тоол. Жишээ: [1,5,3,4,2], k=2 → 3

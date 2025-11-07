@@ -624,26 +624,56 @@
 // }
 
 //27.Борлуулалтын орлого хамгийн бага бүтээгдэхүүнээс эхлэн массив үүсгэ.products = [{title: "Уут", price: 500, sold: 10, discount: 0.1}, {title: "Сав", price: 800, sold: 5, discount: 0.2}]//
-//28.Pages / rating харьцаа хамгийн бага номыг ол.books = [{title: "Монгол түүх", pages: 120, rating: 4.5}, {title: "Газар зүй", pages: 150, rating: 4.8}]//
-//29.Хамгийн бага оноотой subject бүхий оюутны нэрийг ол.students = [{name: "Бат", math: 70, english: 80, science: 90}, {name: "Сара", math: 60, english: 85, science: 95}, {name: "Наран", math: 100, english: 90, science: 80}//
 
-const students = [
-  { name: "Бат", math: 70, english: 80, science: 90 },
-  { name: "Сара", math: 60, english: 85, science: 95 },
-  { name: "Наран", math: 100, english: 90, science: 80 },
+const products = [
+  { title: "Уут", price: 500, sold: 10, discount: 0.1 },
+  { title: "Сав", price: 800, sold: 5, discount: 0.2 }
 ];
 
-let minTotal = students[0].math + students[0].english + students[0].science;
-let minStudent = [students[0].name];
+// 1. Орлого тооцож шинэ property нэмэх
+for (let i = 0; i < products.length; i++) {
+  products[i].revenue = products[i].price * products[i].sold * (1 - products[i].discount);
+}
 
-for (let i = 1; i < students.length; i++) {
-  let total = students[i].math + students[i].english + students[i].science;
-  if (total < minTotal) {
-    minTotal = total;
-    minStudent = students[i].name;
-  } else if (total === minTotal) {
-    minStudent.push(students[i].name);
+// 2. Энгийн аргаар орлогоор нь эрэмбэлэх (for + if)
+for (let i = 0; i < products.length - 1; i++) {
+  for (let j = i + 1; j < products.length; j++) {
+    if (products[i].revenue > products[j].revenue) {
+      // Солих
+      let temp = products[i];
+      products[i] = products[j];
+      products[j] = temp;
+    }
   }
 }
 
-console.log(minStudent);
+console.log(products);
+
+
+
+
+
+
+//28.Pages / rating харьцаа хамгийн бага номыг ол.books = [{title: "Монгол түүх", pages: 120, rating: 4.5}, {title: "Газар зүй", pages: 150, rating: 4.8}]//
+//29.Хамгийн бага оноотой subject бүхий оюутны нэрийг ол.students = [{name: "Бат", math: 70, english: 80, science: 90}, {name: "Сара", math: 60, english: 85, science: 95}, {name: "Наран", math: 100, english: 90, science: 80}//
+
+// const students = [
+//   { name: "Бат", math: 70, english: 80, science: 90 },
+//   { name: "Сара", math: 60, english: 85, science: 95 },
+//   { name: "Наран", math: 100, english: 90, science: 80 },
+// ];
+
+// let minTotal = students[0].math + students[0].english + students[0].science;
+// let minStudent = [students[0].name];
+
+// for (let i = 1; i < students.length; i++) {
+//   let total = students[i].math + students[i].english + students[i].science;
+//   if (total < minTotal) {
+//     minTotal = total;
+//     minStudent = students[i].name;
+//   } else if (total === minTotal) {
+//     minStudent.push(students[i].name);
+//   }
+// }
+
+// console.log(minStudent);

@@ -369,7 +369,7 @@
 
 ///Dawhar dawtalt//
 
-//1.Массив дахь бүх тоонуудыг хоёр хоёроор нь үржүүлж, шинэ массивт хадгал. Жишээ нь: [2,3,4] → [6,8,12]//
+// //1.Массив дахь бүх тоонуудыг хоёр хоёроор нь үржүүлж, шинэ массивт хадгал. Жишээ нь: [2,3,4] → [6,8,12]//
 
 // const number = [2, 3, 4];
 // let number2 = [];
@@ -381,44 +381,44 @@
 // }
 // console.log(number2);
 
-//2.Массив дахь давтагдсан тоонуудыг олж, тус бүрийн хэдэн удаа гарч ирсэн болохыг тооц. Жишээ: [1,2,2,3,3,3,4] → {2:2, 3:3}
+// //2.Массив дахь давтагдсан тоонуудыг олж, тус бүрийн хэдэн удаа гарч ирсэн болохыг тооц. Жишээ: [1,2,2,3,3,3,4] → {2:2, 3:3}
 
-// const number = [1, 2, 2, 3, 3, 3];
-// let number2 = {};
+// const number1 = [1, 2, 2, 3, 3, 3];
+// let number3 = {};
 
-// for (let i = 0; i < number.length; i++) {
+// for (let i = 0; i < number1.length; i++) {
 //   let count = 0;
 
-//   for (j = 0; j < number.length; j++) {
-//     if (number[i] === number[j]) {
+//   for (j = 0; j < number1.length; j++) {
+//     if (number1[i] === number1[j]) {
 //       count++;
 //     }
 //   }
 
 //   if (count > 1) {
-//     number2[number[i]] = count;
+//     number3[number1[i]] = count;
 //   }
 // }
 
-// console.log(number2);
+// console.log(number3);
 
-//3.Хоёр массивын дунд адилхан элементүүдийг ол. Жишээ: [1,2,3,4] ба [3,4,5,6] → [3,4]/
+// //3.Хоёр массивын дунд адилхан элементүүдийг ол. Жишээ: [1,2,3,4] ба [3,4,5,6] → [3,4]/
 
-// const number = [1, 2, 3, 4];
-// const number2 = [3, 4, 5, 6];
+// const number4 = [1, 2, 3, 4];
+// const number5 = [3, 4, 5, 6];
 
 // let num = [];
 
-// for (let i = 0; i < number.length; i++) {
-//   for (let j = 0; j < number2.length; j++) {
-//     if (number[i] === number2[j] && !num.includes(number2[j])) {
-//       num.push(number[i]);
+// for (let i = 0; i < number4.length; i++) {
+//   for (let j = 0; j < number5.length; j++) {
+//     if (number4[i] === number5[j] && !num.includes(number5[j])) {
+//       num.push(number4[i]);
 //     }
 //   }
 // }
 // console.log(num);
 
-//4.Өгөгдсөн тооноос хамаарч од(*)-оор гурвалжин хэвлэ. 4//
+// //4.Өгөгдсөн тооноос хамаарч од(*)-оор гурвалжин хэвлэ. 4//
 
 // const value = 4;
 
@@ -431,7 +431,7 @@
 //   console.log(star);
 // }
 
-//5.Хоёр үг нь ижил үсгийн бүрдэлтэй (анаграмм) эсэхийг шалга. Жишээ: "listen" ба "silent" → true//
+// //5.Хоёр үг нь ижил үсгийн бүрдэлтэй (анаграмм) эсэхийг шалга. Жишээ: "listen" ба "silent" → true//
 
 // const anagramm = "listen";
 // const anagramm1 = "silent";
@@ -455,22 +455,175 @@
 
 // console.log(isAnagramm);
 
-//6.Массив доторх хоёр элементийн нийлбэр нь өгөгдсөн target тоотой тэнцүү хосуудыг ол.//
+// //6.Массив доторх хоёр элементийн нийлбэр нь өгөгдсөн target тоотой тэнцүү хосуудыг ол.//
 
-//7.Mассивыг өсөхөөр эрэмбэл Жишээ: [5,2,8,1] → [1,2,5,8]//
+// //7.Mассивыг өсөхөөр эрэмбэл Жишээ: [5,2,8,1] → [1,2,5,8]//
 
-// const numbers = [5, 2, 8, 1];
+// let numbers = [5, 2, 8, 1];
 
 // for (let i = 0; i < numbers.length; i++) {
 //   for (let j = i + 1; j < numbers.length; j++) {
 //     if (numbers[i] > numbers[j]) {
-//       let numbers2 = numbers[i];
+     
+//       let temp = numbers[i];
 //       numbers[i] = numbers[j];
-//       numbers[j] = numbers2;
+//       numbers[j] = temp;
 //     }
 //   }
 // }
 
-// console.log(numbers);
+// console.log(numbers); 
 
-//8.Массив дахь хоёр тооны ялгавар k-тай тэнцүү хосуудыг тоол. Жишээ: [1,5,3,4,2], k=2 → 3
+// // 8.Массив дахь хоёр тооны ялгавар k-тай тэнцүү хосуудыг тоол. Жишээ: [1,5,3,4,2], k=2 → 3
+
+
+// let arr = [1, 5, 3, 4, 2];
+// let k = 2;
+// let count1 = 0;
+
+// for (let i = 0; i < arr.length; i++) {          // эхний тоо
+//   for (let j = i + 1; j < arr.length; j++) {    // дараагийн тоо
+//     if (Math.abs(arr[i] - arr[j]) === k) {      // ялгавар нь k-тэй тэнцүү бол
+//       count1++;
+//     }
+//   }
+// }
+
+// console.log(count1);
+
+
+// //9.1-ээс 10 хүртэлх үржвэрийн хүснэгт хэвлэ.//
+
+
+// //10. Өгөгдсөн string доторх давтагдсан үсгүүдийг ол. Жишээ: "programming" → ['r','g','m']
+
+// let text = "programming";
+// let result = [];
+
+// for (let i = 0; i < text.length; i++) {          
+//   let count = 0;
+
+//   for (let j = 0; j < text.length; j++) {        
+//     if (text[i] === text[j]) {                   
+//       count++;                                   
+//     }
+//   }
+
+//   if (count > 1 && !result.includes(text[i])) {  
+//     result.push(text[i]);                        
+//   }
+// }
+
+// console.log(result);  
+
+// //11.Set ашиглалгүйгээр массив доторх давхардсан элементүүдийг арилгах. Жишээ: [1,2,2,3,4,4,5] → [1,2,3,4,5]//
+
+// const numbers1 = [1,2,2,3,4,4,5];
+
+// let total1 = [];
+
+// for(let i =0; i<numbers1.length; i++) {
+//     isDuplicate = false;
+
+//     for(let j = 0; j<total1.length; j++) {
+//         if(numbers1[i]=== total1[j]) {
+//             isDuplicate = true;
+//             break;
+//         }
+//     }
+//     if((!isDuplicate)) {
+//         total1.push(numbers1[i]);
+//     }
+// }
+// console.log(total1)
+
+
+// //12.Хоёр ангийн оюутнуудын дүнг харьцуулж, аль нь өндөр оноотойг илэрхийл. Жишээ: classA=[80,90,70], classB=[85,85,75] → [B,A,B]//
+
+// const classA = [80,90,70];
+// const classB = [85,85,75];
+
+// let total2 = [];
+
+
+// for (let i = 0; i < classA.length; i++) {
+//     for(let j = i; j <=i; j++) {
+//         if (classA[i] > classB[j]) {
+//             total2.push("A");
+//         } else if (classA[i] < classB[j]) {
+//             total2.push("B");
+//         } else {
+//             total2.push("Tentsvv")
+//         }
+//     }
+// }
+// console.log(total2)
+
+
+// //13.Хоёр string-ийг double loop ашиглан substring эсэхийг шалга (includes ашиглахгүй). Жишээ: "hello world", "world" → true//
+
+// let text1 = "hello world";
+// let word = "world";
+// let found = true;
+
+// for (let i = 0; i <= text1.length - word.length; i++) {  
+//   let match = true;                                     
+//   for (let j = 0; j < word.length; j++) {               
+//     if (text1[i + j] !== word[j]) {                      
+//       break;                                            
+//     }
+//   }
+
+//   if (match) {                                          
+//     found = true; 
+//     break;                                              
+//   }
+// }
+
+// console.log(found);
+
+// //14.Хоёр массивын бүх элементүүдийн нийлбэрийг 2D массив хэлбэрээр гарга. Жишээ: [1,2] ба [3,4] → [[4,5],[5,6]]//
+
+// const number6 = [1, 2];
+// const number7 = [3, 4];
+// let total3 = [];
+
+// for(let i =0; i<number6.length; i++) {
+//     let sum =[];       
+
+//     for(let j = 0; j<number7.length; j++) {
+//         sum.push(number6[i] + number7[j]);
+//     }
+//     total3.push(sum);
+// }
+
+// console.log(total3);
+
+// //15.Хоёр string-ийн адилхан үсэг хэдэн ширхэг байгаа болохыг тооц. Жишээ: "apple", "peach" → 3 (p, e, a)//
+
+// const fr = "apple";
+// const fri = "peach";
+
+// let count = 0;
+// let total = "";
+
+// for(let i = 0; i < fr.length; i++) {
+//     for(let j = 0; j < fri.length; j++) {
+//         if(fr[i] === fri[j] && !total.includes(fr[i])){
+
+//             count++;
+//             total += fr[i];
+//             break;
+//         }
+//     }
+// }
+
+// console.log(total.split(""));
+
+
+
+
+
+
+
+

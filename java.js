@@ -296,13 +296,13 @@
 //   console.log("30% tentsuul", link5);
 // }
 
-// //16//
-// const anna = 103;
-// if (anna < 100) {
-//   console.log(anna);
-// } else {
-//   console.log(100);
-// }
+//16//
+const anna = 103;
+if (anna < 100) {
+  console.log(anna);
+} else {
+  console.log(100);
+}
 
 // //17//
 // const temdeg = 55;

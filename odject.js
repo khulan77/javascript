@@ -624,6 +624,14 @@
 // }
 
 //27.Борлуулалтын орлого хамгийн бага бүтээгдэхүүнээс эхлэн массив үүсгэ.products = [{title: "Уут", price: 500, sold: 10, discount: 0.1}, {title: "Сав", price: 800, sold: 5, discount: 0.2}]//
+<<<<<<< HEAD
+=======
+
+// const products1 = [
+//   { title: "Уут", price: 500, sold: 10, discount: 0.1 },
+//   { title: "Сав", price: 800, sold: 5, discount: 0.2 },
+// ];
+>>>>>>> 19e4253 (zaa)
 
 const products = [
   { title: "Уут", price: 500, sold: 10, discount: 0.1 },
@@ -677,3 +685,93 @@ console.log(products);
 // }
 
 // console.log(minStudent);
+<<<<<<< HEAD
+=======
+
+//bodlogo2//
+
+//Объект ашиглан үндсэн үйлдлүүд (Basic Object Manipulation)//
+
+//1.Сурагчийг төлөөлөх объект үүсгэж дараах шинж чанаруудыг өгөх: name, age, grade, subject. Объектыг console дээр хэвлэнэ үү.
+//2.Үүсгэсэн объект дээр email шинж чанарыг нэмнэ үү.
+//3.Сурагчийн нас 18-с доош бол "not allowed" гэж console дээр хэвлэнэ үү.//
+
+// let suragch = {
+//   name: "tegshe",
+//   ago: 13,
+//   grade: 10,
+//   subject: "math",
+//   email: "tegshe77@gmail.com",
+// };
+
+// if (suragch.ago > 18) {
+//   console.log("not allowed");
+// } else {
+//   console.log("allowed");
+// }
+
+// console.log(suragch);
+
+//Объект дээр давталт ба нөхцөл (Loops & Conditions with Objects)//
+
+//1.Давталт ашиглан объектын зөвхөн key-г хэвлэнэ үү.Давталт ашиглан объектын зөвхөн value-г хэвлэнэ үү.
+
+
+// let skin = {
+//   name: "khulan",
+//   ago: 18,
+//   grade: "12b",
+//   subject: "english",
+//   email: "khulan174@gmail.com",
+// }
+
+// for(let key in skin) {
+//     console.log(key);
+    
+// } 
+// console.log(skin["email"])
+
+//Object.keys(obj).length ашиглан объект хоосон эсэхийг шалгаж, нөхцөлөөр console дээр хэвлэнэ үү.//
+
+
+// let story = {
+//    name: "enkhee",
+//    ago: 10,
+// }
+
+// if(Object.keys(story).length === 0) {
+//     console.log("hoosn")
+// } else {
+//     console.log("hooltoi")
+// }
+
+
+//Давталт ашиглан бүх тоон утгыг 10-р нэмнэ үү.//
+
+// const number = [2, 3, 4, 5];
+
+// let sum = [];
+
+// for(let i = 0; i<number.length; i++) {
+//     number[i] += 10
+// }
+// console.log(number);
+
+
+//let items = { apple: 100, banana: 50, orange: 80 } объектын бүх үнэ нийлбэрийг олно уу.//
+
+// let items = { apple: 100, banana: 50, orange: 80};
+// let niilber = 0;
+
+
+// for(let key in items) {
+//     niilber += items[key];
+// }
+
+// console.log("Niilber:", niilber)
+
+
+//for, do-while ба нөхцөлтэй ашиглах (Using for, do-while, and Conditions)
+//Давталт ашиглан объектын бүх тоон утгыг 10-р нэмнэ үү.
+//Объект ашиглан хэрэглэгчийн нэвтрэх мэдээллийг төлөөлөх. if-else ашиглан оруулсан нэр ба нууц үг объектын мэдээлэлтэй таарч байгаа эсэхийг шалгана уу.
+>>>>>>> 19e4253 (zaa)
